@@ -9,7 +9,7 @@
 <body>
 
     <div class="todo">
-        <div class="header" >
+        <div class="content" >
             <img src="{{ asset('img/logocetis.png') }}" alt="cetislogo" width="200px">
         </div>
 
@@ -22,23 +22,31 @@
             <p class="ubuntu">
                 {{$inputs['mensaje']}}
             </p>
-            <p class="ubuntu"><a href="#">Ir a la pagina</a></p>
+            <p class="ubuntu" style="text-align: left;">
+                <a href="#" class="boton">Ir a la pagina</a>
+            </p>
         </div>
 
         <hr class="linea">
 
         <div class="content">
-            <p class="roboto">Mensaje de caracter informativo, no responder dicho mensaje</p>
-            <img src="{{ asset('img/logokeymaster.png') }}" alt="logokeymaster" width="200px">
-            <p class="roboto">AVISO IMPORTANTE:Este correo electronico y/o el material adjunto es para uso exclusivo de la
-                persona o la entidad a la que expresamente se le ha enviado, el cual contiene informacion confidencial.
-                Si no esel destinatario legitimo del mismo, por favor reportelo inmediatamente a la cuenta del remitente y eliminelo
-                Cualquier revision, almacenamiento, retransmision, difusion o cualquier otro uso de este correo,
-                por personas o entidades distintas a las del destinatario legitimo, queda expresamente prohibida. Este
-                correo electronico no pretende ni debe ser considerado como constitutivo de ninguna relacion legal,
-                contractual o de otra indole similar.
+            <p class="roboto">
+                Mensaje de carácter informativo, no responder dicho mensaje.
             </p>
-            <br>
+            <img src="{{ asset('img/logokeymaster.png') }}" alt="logokeymaster" width="200px">
+            <p class="roboto">
+                AVISO IMPORTANTE: Este correo electrónico y/o el material adjunto es para uso exclusivo de la             
+                persona o la entidad a la que expresamente se le ha enviado, el cual contiene información confidencial. 
+                Si no es el destinatario legitimo del mismo, por favor repórtelo inmediatamente a la cuenta del remitente y elimínelo. 
+                Cualquier revisión, almacenamiento, retransmisión, difusión o cualquier otro uso de este correo, 
+                por personas o entidades distintas a las del destinatario legítimo, queda expresamente prohibida. 
+                Este correo electrónico no pretende ni debe ser considerado como constitutivo de ninguna relación legal, contractual o de otra índole similar.
+            </p>
+            <hr class="lineach">
+            <p class="robotoch">CETis 56 Ricardo Flores Magón</p>
+            <p class="robotoch"><a href="www.cetis56.edu.mx">www.cetis56.edu.mx</a></p>
+            <p class="robotoch">© Copyright KEY MASTER ACADEMIC. All Rights Reserved.</p>
+            <p class="robotoch">Designed by Warriors Labs</p>
         </div>
     </div>
 
