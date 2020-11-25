@@ -22,7 +22,6 @@
             <p class="ubuntu">
                 {{$inputs['mensaje']}}
             </p>
-            <br>
             <p class="ubuntu"><a href="#">Ir a la pagina</a></p>
         </div>
 

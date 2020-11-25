@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
 
 hr.linea {
-    border: 5px solid red;
+    border: 5px solid #0e71b8;
     border-radius: 10px;
     width: 90%;
 }
@@ -19,20 +19,24 @@ hr.linea {
     padding-top: 10px;
 }
 a {
-    background-color: red;
+    background-color: #0e71b8;
     color: white;
-    padding: 1.5em 1.5em;
+    padding: .8em;
     text-decoration: none;
     border-radius: 10px;
-  }
+    position: relative;
+    display: block;
+    top: 25px;
+    width: 90px;
+}
 a:hover {
-    background-color: red;
+    background-color: #0e71b8;
 }
 a:active {
-    background-color: red;
+    background-color: #0e71b8;
 }
 a:visited {
-    background-color:red;
+    background-color:#0e71b8;
 }
 .roboto{
     font-family: 'Roboto', sans-serif;
