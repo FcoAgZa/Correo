@@ -9,7 +9,6 @@
 <body>
 
     <div class="todo">
-
         <div class="header" >
             <img src="{{ asset('img/logocetis.png') }}" alt="cetislogo" width="200px">
         </div>
@@ -17,25 +16,22 @@
         <hr class="linea">
 
         <div class="content">
-
-            <h1>
+            <h1 class="ubuntu">
                 {{$inputs['asunto']}}
             </h1>
-            
-            <p>
+            <p class="ubuntu">
                 {{$inputs['mensaje']}}
             </p>
             <br>
-            <a href="#">Ir a la pagina</a>
-
+            <p class="ubuntu"><a href="#">Ir a la pagina</a></p>
         </div>
 
         <hr class="linea">
 
         <div class="content">
-            <p>Mensaje de caracter informativo, no responder dicho mensaje</p>
+            <p class="roboto">Mensaje de caracter informativo, no responder dicho mensaje</p>
             <img src="{{ asset('img/logokeymaster.png') }}" alt="logokeymaster" width="200px">
-            <p>AVISO IMPORTANTE:Este correo electronico y/o el material adjunto es para uso exclusivo de la
+            <p class="roboto">AVISO IMPORTANTE:Este correo electronico y/o el material adjunto es para uso exclusivo de la
                 persona o la entidad a la que expresamente se le ha enviado, el cual contiene informacion confidencial.
                 Si no esel destinatario legitimo del mismo, por favor reportelo inmediatamente a la cuenta del remitente y eliminelo
                 Cualquier revision, almacenamiento, retransmision, difusion o cualquier otro uso de este correo,
@@ -43,24 +39,23 @@
                 correo electronico no pretende ni debe ser considerado como constitutivo de ninguna relacion legal,
                 contractual o de otra indole similar.
             </p>
+            <br>
         </div>
+    </div>
 
-        <div class="content">
-            <!-- Este form no se envia en el correo, solo esta visible en la vista previa -->
-            <br><hr><br>
-            <input type="button" value="Editar" onclick="history.back()"/> 
-            <form action="{{ url('EnviaCorreo') }}" method="POST">
-            {{ csrf_field() }}
-
-                <input type="hidden" name="asunto" id="asunto" value="{{$inputs['asunto']}}">
-                <input type="hidden" name="correo" id="correo" value="{{$inputs['correo']}}">
-                <input type="hidden" id="mensaje" name="mensaje" value="{{$inputs['mensaje']}}">
-                <input type="submit" id="submit" value="Enviar">
-                
-            </form>
-            <br><hr><br>
-            <!-- Este form no se envia en el correo, solo esta visible en la vista previa -->
-        </div>
+    <div class="content">
+        <!-- Este form no se envia en el correo, solo esta visible en la vista previa -->
+        <br><hr><br>
+        <input type="button" value="Editar" onclick="history.back()"/> 
+        <form action="{{ url('EnviaCorreo') }}" method="POST">
+        {{ csrf_field() }}
+            <input type="hidden" name="asunto" id="asunto" value="{{$inputs['asunto']}}">
+            <input type="hidden" name="correo" id="correo" value="{{$inputs['correo']}}">
+            <input type="hidden" id="mensaje" name="mensaje" value="{{$inputs['mensaje']}}">
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+        <br><hr><br>
+        <!-- Este form no se envia en el correo, solo esta visible en la vista previa -->
     </div>
 
 </body>
