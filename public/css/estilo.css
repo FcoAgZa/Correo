@@ -1,0 +1,41 @@
+hr.linea {
+    border: 5px solid red;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.todo{
+    margin: 0 auto;
+    width: 80%;
+    
+    box-shadow: 5px 5px 15px 1px rgba(120,118,120,1);
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(120,118,120,1);
+    -moz-box-shadow: 5px 5px 15px 1px rgba(120,118,120,1);
+}
+
+.content, .header{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+a {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  
+  a:hover {
+    background-color: red;
+  }
+  
+  a:active {
+    background-color: red;
+  }
+  
+  a:visited {
+    background-color:red;
+  }
